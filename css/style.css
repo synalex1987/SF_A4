@@ -1,0 +1,243 @@
+/* Секция настройки шрифтов */
+@font-face {
+	src: 
+		url('../fonts/OpenSans-Regular.ttf'),
+		url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+
+@font-face {
+	src: 
+		url('../fonts/OpenSans-Italic.ttf'),
+		url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+
+@font-face {
+	src: 
+		url('../fonts/OpenSans-SemiBold.ttf') format('truetype'),
+		url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+	font-family: 'Open Sans';
+	font-weight: 600;
+}
+
+@font-face {
+	src: 
+		url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+		url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+	font-family: 'Open Sans';
+	font-weight: 700;
+}
+
+@font-face {
+	src: 
+		url('../fonts/OpenSans-ExtraBold.ttf'),
+		url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+	font-family: 'Open Sans';
+	font-weight: 800;
+}
+/* Секция настройки шрифтов */
+
+/* Настройки отдельных элементов*/
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	color: #585858;
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 55px;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.75;
+}
+/* Настройки отдельных элементов*/
+
+
+.page {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #e0e0e0;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	flex-grow: 1;
+}
+
+/* Для подгона под шаблон*/
+.page_size {
+	padding-top: 29px;
+}
+
+/* Секция меню */
+.header {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	background-color: #000000;
+	width: 100%;
+	max-width: 1249px;
+	margin: auto;
+	min-height: 89px;
+	margin-bottom: 3vw;
+}
+
+.menu {
+	display: flex;
+	align-items: stretch;
+}
+
+.menu_element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 89px;
+	padding: 0 30px;
+	color: #e0e0e0;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.menu_element:hover {
+	background-color: #ff3f40;
+}
+/* Секция меню */
+
+/* Секция информации */
+.info_section
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1249px;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	margin: 0 auto;
+}
+
+
+.info_section_content {
+    bottom: 11px;
+	width: 617px;
+	margin-bottom: 20px;
+	margin-right: 75px;
+}
+
+.info_section_h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	font-weight: 800;
+	line-height: 1.2;
+	letter-spacing: 1.5px;
+	margin: 0;
+	margin-bottom: 18px;
+	text-transform: uppercase;
+}
+
+.info_section_h1_word {
+	letter-spacing: 6px;
+}
+
+.info_section_text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	max-width: 520px;
+	margin: 0;
+	margin-bottom: 51px;
+	opacity: 0.7;
+}
+
+.button-red {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	width: 227px;
+	padding: 16px 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #ff2d2d;
+}
+
+.info_section_image {
+	width: 551px;
+	height: 356px;
+}
+/* Секция информации */
+
+/* Подвал */
+.footer {
+	display: block;
+	background-color: #2c2c2c;
+	width: 100%;
+	max-width: 1249px;
+	margin: auto;
+}
+
+.footer_content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #e0e0e0;
+	min-height: 110px;
+}
+
+.footer_links {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer_links > .footer_link:not(:last-child) {
+	margin-right: 18px;
+}
+/* Подвал */
+
+/* Подгон под экраны */
+@media screen and (max-width: 1286px) {
+	.info_section {
+		flex-wrap: nowrap;
+	}
+	.info_section_content {
+		margin-right: 0;
+		padding-right: 15px;
+	}
+	.info_section_h1 {
+		font-size: 5vw;
+	}
+	.info_section_image {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.header {
+		padding-left: 20px;
+	}
+	.info_section {
+		flex-wrap: wrap;
+	}
+	.info_section__content {
+		width: 100%;
+	}
+	.info_section_image {
+		width: 100%;
+		height: auto;
+	}
+	.info_section_h1 {
+		font-size: 50px;
+	}
+}
+
+/* Подгон под экраны */
